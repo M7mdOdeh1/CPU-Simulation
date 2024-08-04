@@ -173,5 +173,6 @@ CMakeFiles/cpu_task.dir/src/main.cpp.o: \
  /home/m7mdodeh/Desktop/imagry_training/CPU_Task/src/../include/Memory.h \
  /home/m7mdodeh/Desktop/imagry_training/CPU_Task/src/../include/InstructionFactory.h \
  /home/m7mdodeh/Desktop/imagry_training/CPU_Task/src/../include/Instruction.h \
+ /home/m7mdodeh/Desktop/imagry_training/CPU_Task/src/../include/CPU.h \
  /home/m7mdodeh/Desktop/imagry_training/CPU_Task/src/../include/Memory.h \
  /home/m7mdodeh/Desktop/imagry_training/CPU_Task/src/../include/InstructionFactory.h
