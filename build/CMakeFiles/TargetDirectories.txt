@@ -1,3 +1,0 @@
-/home/m7mdodeh/Desktop/imagry_training/CPU_Task/build/CMakeFiles/cpu_task.dir
-/home/m7mdodeh/Desktop/imagry_training/CPU_Task/build/CMakeFiles/edit_cache.dir
-/home/m7mdodeh/Desktop/imagry_training/CPU_Task/build/CMakeFiles/rebuild_cache.dir
