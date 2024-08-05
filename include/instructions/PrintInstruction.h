@@ -1,5 +1,4 @@
-#ifndef PRINTINSTRUCTION_H
-#define PRINTINSTRUCTION_H
+#pragma once
 
 #include "../Instruction.h"
 #include <string>
@@ -8,8 +7,10 @@
 
 class PrintInstruction : public Instruction {
 public:
+    static const int NUM_OPERANDS = 1;
+
     PrintInstruction(CPU& cpu, const std::string& operandsStr);
     void execute() override;
 };
 
-#endif 
+

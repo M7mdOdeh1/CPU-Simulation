@@ -3,8 +3,7 @@
 #include "../../include/CPU.h"
 #include <sstream>
 
-AddiInstruction::AddiInstruction(CPU& cpu, const std::string& operandsStr): Instruction(cpu, operandsStr) {
-
+AddiInstruction::AddiInstruction(CPU& cpu, const std::string& operandsStr): Instruction(cpu, operandsStr, NUM_OPERANDS) {
 }
 
 void AddiInstruction::execute() {

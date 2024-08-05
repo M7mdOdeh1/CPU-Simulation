@@ -1,5 +1,4 @@
-#ifndef INSTRUCTIONFACTORY_H
-#define INSTRUCTIONFACTORY_H
+#pragma once
 
 #include "Instruction.h"
 #include <memory>
@@ -19,4 +18,3 @@ private:
     CPU& cpu;
 };
 
-#endif // INSTRUCTIONFACTORY_H

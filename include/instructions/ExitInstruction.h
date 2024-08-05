@@ -1,5 +1,4 @@
-#ifndef EXITINSTRUCTION_H
-#define EXITINSTRUCTION_H
+#pragma once
 
 #include "Instruction.h"
 #include <string>
@@ -8,8 +7,10 @@
 
 class ExitInstruction : public Instruction {
 public:
+    static const int NUM_OPERANDS = 0;
+
     ExitInstruction(CPU& cpu, const std::string& operandsStr);
     void execute() override;
 };
 
-#endif 
+

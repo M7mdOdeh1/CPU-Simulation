@@ -2,7 +2,7 @@
 #include "../../include/CPU.h"
 #include <sstream>
 
-AddInstruction::AddInstruction(CPU& cpu, const std::string& operandsStr): Instruction(cpu, operandsStr) {
+AddInstruction::AddInstruction(CPU& cpu, const std::string& operandsStr): Instruction(cpu, operandsStr, NUM_OPERANDS) {
 }
 
 void AddInstruction::execute() {
@@ -11,3 +11,4 @@ void AddInstruction::execute() {
     int result = value1 + value2;
     cpu.writeToMemory(operands[2], result);
 }
+

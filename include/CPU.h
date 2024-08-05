@@ -1,5 +1,4 @@
-#ifndef CPU_H
-#define CPU_H
+#pragma once
 
 #include <memory>
 #include <vector>
@@ -27,4 +26,3 @@ private:
     bool running;
 };
 
-#endif 

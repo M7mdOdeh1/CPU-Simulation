@@ -2,9 +2,10 @@
 #include "../../include/CPU.h"
 #include <sstream>
 
-SetInstruction::SetInstruction(CPU& cpu, const std::string& operandsStr): Instruction(cpu, operandsStr) {
+SetInstruction::SetInstruction(CPU& cpu, const std::string& operandsStr): Instruction(cpu, operandsStr, NUM_OPERANDS) {
 }
 
 void SetInstruction::execute() {
     cpu.writeToMemory(operands[0], operands[1]);
 }
+

@@ -1,5 +1,4 @@
-#ifndef ADDIINSTRUCTION_H
-#define ADDIINSTRUCTION_H
+#pragma once
 
 #include "Instruction.h"
 #include <string>
@@ -8,8 +7,10 @@
 
 class AddiInstruction : public Instruction {
 public:
+    static const int NUM_OPERANDS = 3;
+
     AddiInstruction(CPU& cpu, const std::string& operandsStr);
     void execute() override;
+
 };
 
-#endif 

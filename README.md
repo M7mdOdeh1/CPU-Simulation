@@ -39,7 +39,8 @@ The task is to design and simulate a basic CPU with RAM and ROM that can execute
 
 - **ADD P1 P2 P3**: Adds the values at memory addresses P1 and P2, stores the result at P3.
 - **ADDI P1 immediate P3**: Adds the immediate value to the value at address P1, stores the result at P3.
-- **EXIT**: Stops the execution of instructions.
+- **EXIT**: Stops the execution o- **ADDI P1 immediate P3**: Adds the immediate value to the value at address P1, stores the result at P3.
+f instructions.
 - **JMP immediate**: Jumps to the instruction at the specified address.
 - **PRINT P1**: Prints the value at address P1.
 - **SET P1 immediate**: Sets the value at address P1 to the immediate value.

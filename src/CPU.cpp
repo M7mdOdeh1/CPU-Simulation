@@ -25,6 +25,12 @@ void CPU::execute() {
         std::string instructionCode = rom->read(programCounter);
         std::unique_ptr<Instruction> instruction = factory.createInstruction(instructionCode);
 
+        // check if the instruction is valid
+        if (!instruction->isValid()) {
+            std::cerr << "Invalid instruction at address " << programCounter << std::endl;
+            stop();
+        }
+
         // Print the instruction
         std::cout << RED << instructionCode << RESET << std::endl;
 

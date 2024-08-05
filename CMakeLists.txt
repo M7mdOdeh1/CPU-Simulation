@@ -14,6 +14,7 @@ include_directories(include)
 file(GLOB SOURCES
     "src/*.cpp"
     "src/instructions/*.cpp"
+    "src/memory/*.cpp"
 )
 
 # Executable
