@@ -12,14 +12,11 @@
 int main() {
     try {
         // Initialize CPU, RAM, and ROM
-        auto& cpu = CPU::getInstance();
+        CPU cpu;
         auto ram = std::make_shared<RAM<int>>(1024); 
         auto rom = std::make_shared<ROM<std::string>>(1024); 
 
         cpu.initialize(ram, rom);
-
-        // Create an instruction factory
-        InstructionFactory factory;
 
         // Read instructions from the file
         std::vector<std::string> instructions;

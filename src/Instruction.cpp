@@ -1,7 +1,8 @@
 #include "../include/Instruction.h"
+#include "../include/CPU.h"
 #include <sstream>
 
-Instruction::Instruction(const std::string& operandsStr) {
+Instruction::Instruction(CPU& cpu, const std::string& operandsStr) : cpu(cpu) {
     std::istringstream iss(operandsStr);
     int operand;
     while (iss >> operand) {

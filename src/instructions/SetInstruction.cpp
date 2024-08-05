@@ -1,10 +1,10 @@
 #include "../include/instructions/SetInstruction.h"
-#include "CPU.h"
+#include "../../include/CPU.h"
 #include <sstream>
 
-SetInstruction::SetInstruction(const std::string& operandsStr): Instruction(operandsStr) {
+SetInstruction::SetInstruction(CPU& cpu, const std::string& operandsStr): Instruction(cpu, operandsStr) {
 }
 
 void SetInstruction::execute() {
-    CPU::getInstance().writeToMemory(operands[0], operands[1]);
+    cpu.writeToMemory(operands[0], operands[1]);
 }

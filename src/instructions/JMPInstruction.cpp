@@ -1,10 +1,10 @@
-#include "../include/instructions/JMPInstruction.h"
-#include "CPU.h"
+#include "../../include/instructions/JMPInstruction.h"
+#include "../../include/CPU.h"
 #include <sstream>
 
-JmpInstruction::JmpInstruction(const std::string& operandsStr): Instruction(operandsStr) {
+JmpInstruction::JmpInstruction(CPU& cpu, const std::string& operandsStr): Instruction(cpu, operandsStr) {
 }
 
 void JmpInstruction::execute() {
-    CPU::getInstance().setProgramCounter(operands[0] - 1); // set PC to the address 
+    cpu.setProgramCounter(operands[0]-1);
 }

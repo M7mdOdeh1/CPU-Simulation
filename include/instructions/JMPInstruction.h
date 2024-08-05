@@ -3,10 +3,12 @@
 
 #include "../Instruction.h"
 #include <string>
+#include "../CPU.h"
+
 
 class JmpInstruction : public Instruction {
 public:
-    JmpInstruction(const std::string& operandsStr);
+    JmpInstruction(CPU& cpu, const std::string& operandsStr);
     void execute() override;
 };
 

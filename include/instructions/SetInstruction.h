@@ -4,9 +4,10 @@
 #include "Instruction.h"
 #include <string>
 
+
 class SetInstruction : public Instruction {
 public:
-    SetInstruction(const std::string& operands);
+    SetInstruction(CPU& cpu, const std::string& operands);
     void execute() override;
 };
 

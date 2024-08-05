@@ -1,9 +1,12 @@
 #include "../include/instructions/ExitInstruction.h"
-#include "CPU.h"
+#include "../../include/CPU.h"
+#include <iostream>
 
-ExitInstruction::ExitInstruction(const std::string& operandsStr): Instruction(operandsStr) {
+
+ExitInstruction::ExitInstruction(CPU& cpu, const std::string& operandsStr): Instruction(cpu, operandsStr) {
 }
 
 void ExitInstruction::execute() {
-    CPU::getInstance().stop();
+    std::cout << "Exiting..." << std::endl;
+    cpu.stop();
 }

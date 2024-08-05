@@ -3,10 +3,12 @@
 
 #include "Instruction.h"
 #include <string>
+#include "../CPU.h"
+
 
 class AddiInstruction : public Instruction {
 public:
-    AddiInstruction(const std::string& operandsStr);
+    AddiInstruction(CPU& cpu, const std::string& operandsStr);
     void execute() override;
 };
 

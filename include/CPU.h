@@ -9,8 +9,7 @@
 
 class CPU {
 public:
-    static CPU& getInstance();
-
+    CPU();
     void initialize(std::shared_ptr<RAM<int>> ram, std::shared_ptr<ROM<std::string>> rom);
     void execute();
     void setProgramCounter(int address);
@@ -19,7 +18,6 @@ public:
     void stop();
 
 private:
-    CPU() = default;
     CPU(const CPU&) = delete;
     CPU& operator=(const CPU&) = delete;
 
